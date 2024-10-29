@@ -16,6 +16,7 @@ const Tabs = () => {
       >
         {tabsList.map((tab, index) => (
           <div
+            data-testid={`Tab ${tab.index}`}
             onClick={() => changeActiveIndex(tab.index)}
             key={index}
             className={clsx(

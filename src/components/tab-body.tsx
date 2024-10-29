@@ -15,6 +15,9 @@ const TabBody = ({ activeIndex = 1 }: { activeIndex: number }) => {
     queryFn: () => fetchDummyData(activeIndex),
     cacheTime: 1000 * 60 * 10,
     staleTime: 1000 * 60 * 1,
+    onError: (err: Error) => {
+      toast(err.message);
+    },
   });
 
   if (error) {
