@@ -7,12 +7,7 @@ export default defineConfig({
 
   server: {
     proxy: {
-      "/api": {
-        target: "https://loripsum.net/",
-        changeOrigin: true,
-        secure: false,
-        ws: true,
-      },
+      "/api": "https://loripsum.net/",
     },
   },
 });
