@@ -4,8 +4,11 @@ import toast from "react-hot-toast";
 
 import TextLoadingSkeleton from "./text-loading-skeleton";
 const TabBody = ({ activeIndex = 1 }: { activeIndex: number }) => {
+  console.log(import.meta.env.VITE_APP_API_URL);
   const fetchDummyData = async (paragraphs: number) => {
-    const response = await fetch(`/api/${paragraphs}/short/headers/plaintext`);
+    const response = await fetch(
+      `https://loripsum.net/api/${paragraphs}/short/headers/plaintext`
+    );
     if (!response.ok) throw new Error("Network response was not ok");
     return response.text();
   };
