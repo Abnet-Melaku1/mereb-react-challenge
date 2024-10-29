@@ -1,7 +1,17 @@
-import "./App.css";
+import { Toaster } from "react-hot-toast";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Tabs from "./components/tabs";
 
 function App() {
-  return <h1>Mereb Technologies challenge Project</h1>;
+  const queryClient = new QueryClient();
+  return (
+    <QueryClientProvider client={queryClient}>
+      <div className="bg-black h-screen flex flex-col items-center">
+        <Tabs />
+      </div>
+      <Toaster />
+    </QueryClientProvider>
+  );
 }
 
 export default App;
