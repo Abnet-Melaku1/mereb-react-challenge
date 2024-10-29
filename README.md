@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+# Project Name: Data Fetching Tab with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created by **[Abnet Melaku](https://abnet-portfolio.vercel.app/)** as a **test project given by Mereb Technologies**. It demonstrates data fetching from the [Loripsum API](https://loripsum.net/) and showcases a simple, responsive tab interface built with React.
 
-Currently, two official plugins are available:
+> **Note**: Deployment is currently limited due to a **CORS (Cross-Origin Resource Sharing) issue** with the Loripsum API, which restricts access from external domains. This affects the ability to host the project online, so it is recommended to run the project locally for full functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React**: Core library for building UI components
+- **Tailwind CSS**: For styling and responsiveness
+- **React Query**: Manages data fetching and caching
+- **Vitest with React Testing Library**: Ensures component reliability through unit testing
+- **pnpm**: Efficient package manager for installation and dependency management
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📚 Project Choices
 
-- Configure the top-level `parserOptions` property like this:
+- **No UI Framework**: Opted not to use Shadcn or similar UI frameworks for simplicity, focusing on essential dependencies and custom styling.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Node.js** (v14+ recommended)
+- **pnpm** (if not installed, refer to [pnpm installation guide](https://pnpm.io/installation))
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Navigate into the project directory:**
+
+   ```bash
+   cd <project-directory>
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   pnpm install
+   ```
+
+4. **Run the development server:**
+
+   ```bash
+   pnpm run dev
+   ```
+
+### Running Tests
+
+To execute tests with Vitest and React Testing Library:
+
+```bash
+pnpm test
+ 🔗 Resources
+
+- **[Loripsum API](https://loripsum.net/)**: Generate placeholder text for testing and design.
+- **[React Query Documentation](https://react-query.tanstack.com/)**: Manage server-state in React applications with ease.
+- **[Tailwind CSS Documentation](https://tailwindcss.com/)**: Utility-first CSS framework for creating custom designs.
+- **[Vitest Documentation](https://vitest.dev/)**: A Vite-native unit testing framework.
+
 ```
