@@ -4,6 +4,10 @@ This project was created by **[Abnet Melaku](https://abnet-portfolio.vercel.app/
 
 > **Note**: Deployment is currently limited due to a **CORS (Cross-Origin Resource Sharing) issue** with the Loripsum API, which restricts access from external domains. This affects the ability to host the project online, so it is recommended to run the project locally for full functionality.
 
+## 🎥 Watch the Demo
+
+![Demo of the app](public/mereb-challenge.gif)
+
 ## 🛠️ Tech Stack
 
 - **React**: Core library for building UI components
